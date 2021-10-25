@@ -1,0 +1,11 @@
+                                TITLE- Carry Save Adder Logic Circuit
+
+
+
+     Objective-  Addition of multiple operands simultaneously using carry save adder.
+
+     Implementation -It is to be implemented as software application.
+
+     Functionality - first of all it will ask for the number of operands to be added and the it will take numbers and will      check whether the numbers are positive or negative then if the number is negative the it will convert it to      2’complement form and then perform addition using carry save adder. And the result will be shown after converting the      result back to normal form .
+     And the result will be shown on the screen.
+    
