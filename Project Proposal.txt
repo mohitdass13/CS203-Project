@@ -1,11 +1,10 @@
-                                TITLE- Carry Save Adder Logic Circuit
+                                TITLE- Implementaion of State Machines for the pattern detection.
 
 
 
-     Objective-  Addition of multiple operands simultaneously using carry save adder.
+     Objective-  detectecting the pattern in a given sequence.
 
-     Implementation -It is to be implemented as software application.
+     Implementation - it will be implemented as program.
 
-     Functionality - first of all it will ask for the number of operands to be added and the it will take numbers and will      check whether the numbers are positive or negative then if the number is negative the it will convert it to      2’complement form and then perform addition using carry save adder. And the result will be shown after converting the      result back to normal form .
-     And the result will be shown on the screen.
+     Functionality -   it will ask the user to input the pattern to be detected and the type of machines whether mealy or moore and overlapping or non overlapping. the it will                            take the sequence as input in which the pattern is to be detected. the it will give output as a state graph in the form of texts s1->s2->s3.... the using a                        software we can create a graphical representation of this textual data.
     
