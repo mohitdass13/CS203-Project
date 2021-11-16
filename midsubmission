@@ -1,1 +1,18 @@
+Input           :-   input will be sequences and the pattern to be detected.type mealy or moore will also be input. 
+                     type overlapping and non overlapping is also be asked from the user.
+
+Output          :-   the output will be the state graph in the form of text s1,s2... states.
+
+Functionality   :-   our program will first ask the user to enter the pattern to be detected. the it will ask for entering the pattern1 ,pattern2 and so on.
+                     then it ask for input the sequence in which the pattern is to be detected. the it will ask to enter the type mealy or moore.
+                     and also ask the user to enter the whether overlapping or non overlapping. then the program will form the state graph accordingly.
+                     and will give the output in the form of text like  s1->s2->s3....
+                     then we will use a software for the graphical representation of the textual data in the form of circles and arrows as taught in the lecture.
+
+
+
+
+
+
+
 
