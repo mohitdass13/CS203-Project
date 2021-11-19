@@ -1,1 +1,9 @@
-
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int seq[100];
+  int pat[4];
+  printf("Enter the sequence in which pattern is to be matched\n");
+  int i=0;
+  
