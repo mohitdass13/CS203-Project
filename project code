@@ -1,9 +1,100 @@
 #include<stdio.h>
-#include<stdlib.h>
+void overlapping(int a[],int b[],int s,int p);
 int main()
 {
-  int seq[100];
-  int pat[4];
-  printf("Enter the sequence in which pattern is to be matched\n");
-  int i=0;
+    int s,p;
+    printf("Enter the size of sequence :\n");
+    scanf("%d",&s);
+    printf("Enter the size of pattern:\n");
+    scanf("%d",&p);
+    int seq[s];
+    int pat[p];
+    int i;
+    printf("Enter a sequence of bits:\n");
+    for(i=0;i<s;i++)
+    {
+        scanf("%d",&seq[i]);
+    }
+    int j;
+    printf("Enter the pattern of the bitts which is to  be matched\n");
+    for(j=0;j<p;j++)
+    {
+        scanf("%d",&pat[j]);
+    }
+    int no;
+    printf("Enter the type: 1. overlapping\n2. Non Overlapping\n");
+    scanf("%d",&no);
+    if(no==1)
+    {
+    int l;
+    int k=0;
+    int flag=0;
+    int oseq[s];
+    for(l=(p-1);l<s;l++)
+    {
+        for(int m=((l-p)+1);m<=l;m++)
+        {
+            if(seq[m]==pat[k++])
+            {
+                flag++;
+            }
+            else 
+            {
+                break;
+            }
+        }
+        for(int c=0;c<l;c++)
+        {
+            oseq[c]=0;
+        }
+        if(flag==p)
+        {
+            oseq[l]=1;
+        }
+        else
+        {
+            oseq[l]=0;
+        }
+    }
+    int n=0;
+while(n<s)
+{
+    printf("%d ",oseq[n++]);
+}
+    }
+}
+/*void overlapping(int a[],int b[],int s,int p)
+{
+    int i;
+    int k=0;
+    int flag=0;
+    int oseq[s];
+    for(i=0;i<=s;i++)
+    {
+        for(int j=i;j>(i-p);j--)
+        {
+            if(a[j]==b[k++])
+            {
+                flag++;
+            }
+            else 
+            {
+                break;
+            }
+        }
+        if(flag==p)
+        {
+            oseq[i]=1;
+        }
+        else
+        {
+            oseq[i]=0;
+        }
+    }
+    int n=0;
+while(1)
+{
+    printf("%d",oseq[n++]);
+}
+}*/
   
